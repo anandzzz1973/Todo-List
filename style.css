@@ -3,6 +3,11 @@
     width: 100%;
 }
 
+body
+{
+    background-color: rgb(218, 189, 202);
+}
+
 #btnReset
 {
     width: 100%;
@@ -21,6 +26,11 @@
 {
     background-color: rgb(223, 95, 133);
     border: solid 1px black;
+}
+
+.done
+{
+    background-color: rgb(228, 160, 34);
     margin: 1px;
     text-decoration: line-through;
 }
@@ -30,4 +40,9 @@ button
     margin: 2px;
     border-radius: 3px;
     transform: scale((2,2));
+}
+
+h1
+{
+    text-shadow: 3px 3px 10px red;
 }
