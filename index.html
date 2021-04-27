@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.js" integrity="sha512-ia48mJh6IXv6baAI07Ib/crgsG/MD4tbSnOndWLo3GSExMhYsn1xPbni40VamCaXWk79t1dxi/JahsqOFazkew==" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <div class="container ml-3 p-3">
+        <h1 style="text-align: center;">Todo List</h1>
+
+        <div class="row">
+            <div class="col col-md-8">
+                <div class="form-group">
+                    <label for="inputNewTask"><b>Enter Task</b></label>
+                    <input type="text" class="form-control" id="inputNewTask" aria-describedby="emailHelp" placeholder="Enter Text">
+                    <small id="emailHelp" class="form-text text-muted">Write Your's task in one line</small>
+                </div>
+            </div>
+
+            <div class="col col-md-4">
+                <div class="row">
+                    <button type="button" class="btn btn-primary col" disabled id="btnAdd"><i class="fas fa-plus-square"></i> Add Your Task </button>
+
+                    <button type="button" class="btn btn-info col" disabled id="btnReset"><i class="fas fa-backspace"></i> Reset Your Task </button>
+                </div>
+                <div class="row">
+                    <button type="button" class="btn btn-warning col " disabled id="btnSort"><i class="fas fa-sort-amount-down"></i> Sort</button>
+
+                    <button type="button" class="btn btn-success col" disabled id="btnClear"><i class="fas fa-trash-alt"></i> Clear All</button>
+                </div>
+            </div>
+            
+        </div>
+
+        
+
+        <div class="row m-3 p-3">
+            <ol class="list-group m-3" id="ulTask">
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
